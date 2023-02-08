@@ -3,3 +3,4 @@
 2-bring_me_home => used for navigating to the home root => cd /root
 3-listfiles => used for listing files in a long format => ls -l
 4-listmorefiles => Listing hidden & non-hidden files with long format => ls -al 5-listfilesdigitonly => displaying user, group IDs as digits along => ls -aln
+6-firstdirectory => making directory in tmp => mkdir /tmp/my_first_directory
