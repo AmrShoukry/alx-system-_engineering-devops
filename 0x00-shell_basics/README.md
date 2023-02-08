@@ -4,3 +4,4 @@
 3-listfiles => used for listing files in a long format => ls -l
 4-listmorefiles => Listing hidden & non-hidden files with long format => ls -al 5-listfilesdigitonly => displaying user, group IDs as digits along => ls -aln
 6-firstdirectory => making directory in tmp => mkdir /tmp/my_first_directory
+7-movethatfile => specific location => mv /tmp/betty /tmp/my_first_directory
