@@ -8,3 +8,4 @@
 7-everybody => changing permissions => chmod ugo+x hello
 8-James_Bond => setting permissions => chmod 007 hello
 9-John_Doe => setting permissions => chmod 753 hello
+10-mirror_permissions => reference permissions => chmod --reference=olleh hello
