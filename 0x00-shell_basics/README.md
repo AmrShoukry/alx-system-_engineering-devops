@@ -2,7 +2,8 @@
 1-listit => used for printing the content of the file => ls
 2-bring_me_home => used for navigating to the home root => cd /root
 3-listfiles => used for listing files in a long format => ls -l
-4-listmorefiles => Listing hidden & non-hidden files with long format => ls -al 5-listfilesdigitonly => displaying user, group IDs as digits along => ls -aln
+4-listmorefiles => Listing hidden & non-hidden files with long format => ls -al
+5-listfilesdigitonly => displaying user, group IDs as digits along => ls -aln
 6-firstdirectory => making directory in tmp => mkdir /tmp/my_first_directory
 7-movethatfile => specific location => mv /tmp/betty /tmp/my_first_directory
 8-firstdelete => delete a specific file => rm /tmp/my_first_directory/betty
@@ -13,3 +14,4 @@
 13-symbolic_link => creating a shortcut => ln -s /bin/ls __ls_
 14-copy_html => copying html files to its parent => cp *.html ..
 100-lets_move => moving all files beginning with uppercase => mv [[:upper:]] /tmp/u_
+101-clean_emacs => deleting files ending with ~ => rm *~
