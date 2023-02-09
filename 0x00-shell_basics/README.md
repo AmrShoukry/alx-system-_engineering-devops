@@ -11,4 +11,5 @@
 11-lists => list different folders => ls . .. /boot -al
 12-file_type => get the file type => file /tmp/iamafile
 13-symbolic_link => creating a shortcut => ln -s /bin/ls __ls_
-14-copying html files to its parent => cp *.html .._
+14-copy_html => copying html files to its parent => cp *.html ..
+100-lets_move => moving all files beginning with uppercase => mv [[:upper]] /tmp/u_
