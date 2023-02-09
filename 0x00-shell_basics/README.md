@@ -15,3 +15,4 @@
 14-copy_html => copying html files to its parent => cp *.html ..
 100-lets_move => moving all files beginning with uppercase => mv [[:upper:]] /tmp/u_
 101-clean_emacs => deleting files ending with ~ => rm *~
+102-tree => creating nested folders => mkdir -p welcome/to/school
