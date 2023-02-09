@@ -17,3 +17,6 @@
 101-clean_emacs => deleting files ending with ~ => rm *~
 102-tree => creating nested folders => mkdir -p welcome/to/school
 103-commas => separate by commas, end by /, sort => ls -amp | sort
+school.mgc => creating a magic file to attach any file starting with the word SCHOOL at the beginning of the file (at offset 0) with descriping it as a school data with a mime type of school =>
+0	string SCHOOL School data
+!:mime School
