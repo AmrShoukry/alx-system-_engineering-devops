@@ -7,4 +7,4 @@
 7-movethatfile => specific location => mv /tmp/betty /tmp/my_first_directory
 8-firstdelete => delete a specific file => rm /tmp/my_first_directory/betty
 9-firstdirdeletion => delete a specific dir => rm -r /tmp/my_first_directory
-10-back => go back one step => cd ..
+10-back => go back to previous step => cd -
