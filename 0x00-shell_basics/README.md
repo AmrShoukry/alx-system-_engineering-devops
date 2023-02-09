@@ -9,3 +9,4 @@
 9-firstdirdeletion => delete a specific dir => rm -r /tmp/my_first_directory
 10-back => go back to previous step => cd -
 11-lists => list different folders => ls . .. /boot -al
+12-file_type => get the file type => file /tmp/iamafile
