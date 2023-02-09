@@ -10,4 +10,5 @@
 10-back => go back to previous step => cd -
 11-lists => list different folders => ls . .. /boot -al
 12-file_type => get the file type => file /tmp/iamafile
-13-symbolic_link => creating a shortcut => ln -s /bin/ls __ls__
+13-symbolic_link => creating a shortcut => ln -s /bin/ls __ls_
+14-copying html files to its parent => cp *.html .._
