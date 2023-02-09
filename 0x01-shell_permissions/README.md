@@ -4,4 +4,4 @@
 3-new_owner => changing owner => chown betty hello
 4-empty => creating an empty file => touch hello
 5-execute => changing owner to execute => chmod u+x hello
-6-multiple_permissions => changing permissions => chmod ugo+xr hello
+6-multiple_permissions => changing permissions => chmod ug+x, o+r hello
