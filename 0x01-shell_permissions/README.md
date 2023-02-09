@@ -6,3 +6,4 @@
 5-execute => changing owner to execute => chmod u+x hello
 6-multiple_permissions => changing permissions => chmod ug+x, o+r hello
 7-everybody => changing permissions => chmod ugo+x hello
+8-James_Bond => setting permissions => chmod 007 hello
