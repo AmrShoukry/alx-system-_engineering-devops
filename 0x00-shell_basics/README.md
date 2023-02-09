@@ -6,3 +6,4 @@
 6-firstdirectory => making directory in tmp => mkdir /tmp/my_first_directory
 7-movethatfile => specific location => mv /tmp/betty /tmp/my_first_directory
 8-firstdelete => delete a specific file => rm /tmp/my_first_directory/betty
+9-firstdirdeletion => delete a specific dir => rm -r /tmp/my_first_directory
