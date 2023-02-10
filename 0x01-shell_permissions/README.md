@@ -15,3 +15,4 @@
 100-change_owner_and_group => changing owner, group => chown -R vincent:staff *
 101-symbolic_link_permissions => changing for symbolic => chown -R vincent:staff _hello
 102-if_only => changing owner with condition => chown -R --from=guillaume betty hello
+103-Star_Wars => playing episode IV of Star Wars => telnet towel.blinkenlights.nl
