@@ -12,4 +12,5 @@
 11-directories_permissions => chmod sub directories => find . -type d -exec chmod 755 {} +
 12-directory_permissions => create with permission => mkdir -m 751 my_dir
 13-change_group => changing group for a file => chgrp school hello
-100-change_owner_and_group => changing owner, group => chown vincent:staff *
+100-change_owner_and_group => changing owner, group => chown -R vincent:staff *
+101-symbolic_link_permissions => changing for symbolic => chown -R vincent:staff _hello
