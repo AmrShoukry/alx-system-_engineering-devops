@@ -9,3 +9,4 @@
 8-James_Bond => setting permissions => chmod 007 hello
 9-John_Doe => setting permissions => chmod 753 hello
 10-mirror_permissions => reference permissions => chmod --reference=olleh hello
+11-directories_permissions => chmod sub directories => find ./ -type d -exec chmod ugo+x
