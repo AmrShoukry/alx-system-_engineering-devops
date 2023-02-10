@@ -14,4 +14,4 @@
 13-change_group => changing group for a file => chgrp school hello
 100-change_owner_and_group => changing owner, group => chown -R vincent:staff *
 101-symbolic_link_permissions => changing for symbolic => chown -R vincent:staff _hello
-102-if_only => changing owner with condition => if[stat -c "%U" hello] then chown betty hello
+102-if_only => changing owner with condition => if[stat -c "%U" hello = "guillaume"] then chown betty hello
