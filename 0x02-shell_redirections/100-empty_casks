@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -iname ".*" -printf "%f\n" -or -empty -printf "%f\n"
+find . -empty -printf "%f\n"
