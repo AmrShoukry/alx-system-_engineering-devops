@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script is displaying Numbers 20 times except some iterations
+i=0
+while [ $i -ne 20 ]; do
+	i=$((i + 1))
+	echo $i
+	if [ $i -eq 4 ]; then
+		echo "bad luck from China"
+	elif [ $i -eq 9 ]; then
+		echo "bad luck from Japan"
+	elif [ $i -eq 17 ]; then
+		echo "bad luck from Italy"
+	fi
+done
