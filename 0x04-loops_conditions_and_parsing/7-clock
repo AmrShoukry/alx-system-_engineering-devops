@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script is displaying Hours and Minutes
+Hours=0
+Minutes=1
+while [ $Hours -ne 13 ]; do
+	Minutes=1
+	echo "Hour: $Hours"
+	while [ $Minutes -ne 60 ]; do
+		echo $Minutes
+		Minutes=$((Minutes + 1))
+	done
+	Hours=$((Hours + 1))
+done
