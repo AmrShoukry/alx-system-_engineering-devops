@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script is displaying current processs id
+# shellcheck disable=SC2009
+
+ps -ufxa | grep "bash"
