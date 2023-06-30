@@ -2,12 +2,12 @@
 # This script is checking file format
 
 file=school
-if [ -e $file ]; then
-	if [ -s $file ]; then
+if [ -e "$file" ]; then
+	if [ -s "$file" ]; then
 		echo "school file is empty"
 	else
 		echo "school file is not empty"
-		if [ -f $file ]; then
+		if [ -f "$file" ]; then
 			echo "school is a regular file"
 		fi
 	fi
