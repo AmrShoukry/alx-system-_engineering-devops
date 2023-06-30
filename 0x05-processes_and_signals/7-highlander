@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # This script is used to handle signals
 
+trap 'echo "I am invincible!!"' SIGTERM
+
 while true; do
 	echo "To infinity and beyond"
-	trap 'echo "I am invincible!!"' SIGTERM
 	sleep 2
 done
