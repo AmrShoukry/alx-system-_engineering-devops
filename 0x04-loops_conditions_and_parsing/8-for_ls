@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script is displaying files and directories in a specific format
+for i in 'ls'; do
+	ls -1 | cut -d '-' -f2
+done
