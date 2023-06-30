@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script is used to handle signals
+
+pkill -9 -f '7-highlander'
