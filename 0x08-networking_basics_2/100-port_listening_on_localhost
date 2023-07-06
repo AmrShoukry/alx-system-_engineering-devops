@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script is for fizzbuzz 3, 5
 
-ifconfig | awk '/inet / {print $2}'
+nc -l localhost 98
