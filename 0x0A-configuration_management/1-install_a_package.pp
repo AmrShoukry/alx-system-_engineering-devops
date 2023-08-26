@@ -1,6 +1,6 @@
 # Install a package
 node default {
     package {'python3-flask':
-        ensure => 'installed',
+        ensure => '2.1.0',
     }
 }
