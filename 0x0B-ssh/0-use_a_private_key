@@ -1,0 +1,7 @@
+#!/bin/bash
+
+private_key="$HOME/.ssh/school"
+remote_user="ubuntu"
+remote_host="34.232.52.155"
+
+ssh -i "$private_key" "$remote_user"@"$remote_host"

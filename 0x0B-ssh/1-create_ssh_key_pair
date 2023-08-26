@@ -1,0 +1,7 @@
+#!/bin/bash
+
+key_name="school"
+key_dir="$HOME/.ssh"
+key_size=4096
+
+ssh-keygen -t rsa -b "$key_size" -f "$key_dir/$key_name" -N ""
