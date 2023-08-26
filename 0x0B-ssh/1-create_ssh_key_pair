@@ -1,7 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Write a Bash script that creates an RSA key pair.
 
-key_name="school"
-key_dir="$HOME/.ssh"
-key_size=4096
-
-ssh-keygen -t rsa -b "$key_size" -f "$key_dir/$key_name" -N ""
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/school -N betty
