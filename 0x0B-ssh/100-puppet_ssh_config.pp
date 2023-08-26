@@ -1,10 +1,15 @@
 # Client configuration file (w/ Puppet)
 node default {
-    file { '~/.ssh/config':
-        ensure  => 'file',
-        content => 'IdentityFile ~/.ssh/school
-        PasswordAuthentication no',
-        mode    => '0600'
+    file_line { 'Identity':
+        ensure  => 'present',
+        line    => 'IdentityFile ~/.ssh/school'
         path    => '~/.ssh/config'
     }
+
+    file_line { 'password_off':
+        ensure  => 'present',
+        line    => 'PasswordAuthentication no'
+        path    => '~/.ssh/config'
+    }
+
 }
