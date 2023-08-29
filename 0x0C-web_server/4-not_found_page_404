@@ -58,6 +58,12 @@ server {
             rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
         }
 
+        error_page 404 custom404.html;
+        location = /custom404.html {
+            root /usr/share/nginx/html;
+            internal;
+        }
+
 
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
         #
