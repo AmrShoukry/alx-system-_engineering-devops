@@ -23,6 +23,22 @@ content=\
 
 # Default server configuration
 #
+
+http {
+
+    server {
+        error_page 404 custom404.html;
+        location = /custom404.html {
+            root /usr/share/nginx/html;
+            internal;
+        }
+    }
+
+    include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/sites-enabled/*;
+
+}
+
 server {
         listen 80 default_server;
         listen [::]:80 default_server;
@@ -57,13 +73,6 @@ server {
         location /redirect_me {
             rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
         }
-
-        error_page 404 custom404.html;
-        location = /custom404.html {
-            root /usr/share/nginx/html;
-            internal;
-        }
-
 
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
         #
