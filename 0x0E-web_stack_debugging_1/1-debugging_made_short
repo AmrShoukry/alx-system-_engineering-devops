@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # 1. Make it sweet and short
-sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
-sudo service nginx restart > /dev/null 2&>1
-sudo rm -f /run/nginx.pid
+sudo ./0-nginx_likes_port_80
+sudo echo -n > /run/nginx.pid
