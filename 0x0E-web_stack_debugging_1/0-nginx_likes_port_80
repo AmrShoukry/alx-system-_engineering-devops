@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 # 0. Nginx likes port 80
 
-file_path="/etc/nginx/sites-enabled/default"
-old_port=8080
-new_port=80
-
-sudo sed -i "s/$old_port/$new_port/g" $file_path
+sudo sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
 sudo service nginx restart
