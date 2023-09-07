@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # 1. Make it sweet and short
-sudo ./0-nginx_likes_port_80
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo echo -n > /run/nginx.pid
+sudo restart nginx
