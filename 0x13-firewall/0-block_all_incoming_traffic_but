@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# installing and configuring firewall
+
+sudo apt-get install ufw -y
+sudo ufw enable -y
+sudo ufw dafault deny incoming
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
