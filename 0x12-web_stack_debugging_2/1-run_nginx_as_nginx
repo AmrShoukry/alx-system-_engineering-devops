@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# 1. Run Nginx as Nginx
+sudo chmod 644 /etc/nginx/nginx.conf
+sed -i 's/#user www-data;/user nginx;/' /etc/nginx/nginx.conf
+sed -i 's/listen 80 default_server;/listen 8080 default_server;/' /etc/nginx/sites-available/default
+sed -i 's/listen \[::\]:80 default_server ipv6only=on;/listen [::]:8080 default_server ipv6only=on;/' /etc/nginx/sites-available/default
+sed -i 's/server_name localhost;/server_name _;/' /etc/nginx/sites-available/default
+sudo pkill apache2
+sudo -u nginx service nginx restart
