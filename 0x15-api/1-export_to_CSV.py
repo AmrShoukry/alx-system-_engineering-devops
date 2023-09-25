@@ -23,13 +23,12 @@ if __name__ == '__main__':
 
     for object in objects:
         if object.get('userId') == USER_ID:
-            if object.get('completed') is True:
-                new_entry = []
-                new_entry.append(USER_ID)
-                new_entry.append(USER_NAME)
-                new_entry.append(object.get('completed'))
-                new_entry.append(object.get('title'))
-                completed_titles.append(new_entry)
+            new_entry = []
+            new_entry.append(USER_ID)
+            new_entry.append(USER_NAME)
+            new_entry.append(object.get('completed'))
+            new_entry.append(object.get('title'))
+            completed_titles.append(new_entry)
 
     csv_file_name = f"{USER_ID}.csv"
 
