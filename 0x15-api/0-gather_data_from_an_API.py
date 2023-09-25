@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     todo_response = requests.get("https://jsonplaceholder.typicode.com/todos/")
     user_response = requests.get(f"https://jsonplaceholder.typicode.com/users/\
-    {USER_ID}")
+{USER_ID}")
 
     complete = 0
     all = 0
