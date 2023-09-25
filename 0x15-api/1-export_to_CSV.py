@@ -18,8 +18,7 @@ if __name__ == '__main__':
     objects = json.loads(todo_response.text)
     user = json.loads(user_response.text)
 
-    USER_NAME = user.get('name')
-    USER_ID_STRING = sys.argv[1]
+    USER_NAME = user.get('username')
 
     for object in objects:
         if object.get('userId') == USER_ID:
