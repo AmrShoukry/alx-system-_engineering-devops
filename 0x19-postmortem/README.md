@@ -19,3 +19,7 @@ To address the problem, the solution involved temporarily removing the favorites
 ### Corrective and preventative measures
 There is room for improvement in ensuring that any new feature undergoes thorough testing before its deployment to the production environment. Specifically, new features should not be approved for production release if they lack proper unit testing.
 To tackle current or potential issues, a set of tasks should be undertaken (Implement unit testing, Deploy a monitoring tool).
+
+
+![maxresdefault](https://github.com/AmrShoukry/alx-system_engineering-devops/assets/121165225/6d570a1c-693b-4c86-9f4d-706b9d743762)
+![image](https://github.com/AmrShoukry/alx-system_engineering-devops/assets/121165225/e6644add-1f24-4e8c-8889-c6d62c1be6ae)
