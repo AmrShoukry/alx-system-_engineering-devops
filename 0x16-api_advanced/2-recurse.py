@@ -4,7 +4,7 @@ import requests
 import time
 
 
-def recurse(subreddit, hot_list=[], after="t3_174eg6z"):
+def recurse(subreddit, hot_list=[], after=""):
     """ rite a recursive function that queries the Reddit API and returns a
      list containing the titles of all hot articles for a given subreddit.. """
     headers = {"User-Agent": "AmrShoukry"}
