@@ -4,16 +4,15 @@ import requests
 import time
 
 
-def recurse(subreddit, hot_list=[], after=""):
-    """ rite a recursive function that queries the Reddit API and returns a
-     list containing the titles of all hot articles for a given subreddit.. """
+def recurse(subreddit, hot_list=[], after="", retries=60):
+    """ Write a recursive function that queries the Reddit API and returns a
+    list containing the titles of all hot articles for a given subreddit """
     headers = {"User-Agent": "AmrShoukry"}
     url = f'https://www.reddit.com/r/{subreddit}/hot.json?after={after}'
     response = requests.get(url, allow_redirects=False, headers=headers)
-    data = response.json()
 
     if response.status_code == 200:
-        print(hot_list)
+        data = response.json()
         new_after = data['data']['after']
         posts = data['data']['children']
 
@@ -30,6 +29,9 @@ def recurse(subreddit, hot_list=[], after=""):
             sleep_time = max(0, reset_time - time.time())
             time.sleep(sleep_time)
 
-        return recurse(subreddit, hot_list, new_after)
+        return recurse(subreddit, hot_list, new_after, retries)
+    elif response.status_code == 429:
+        time.sleep(1)
+        return recurse(subreddit, hot_list, after, retries)
     else:
-        return hot_list
+        return None
