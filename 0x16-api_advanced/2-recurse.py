@@ -4,7 +4,6 @@ import requests
 import time
 
 
-
 def recurse(subreddit, hot_list=[], after="t3_174eg6z"):
     """ rite a recursive function that queries the Reddit API and returns a
      list containing the titles of all hot articles for a given subreddit.. """
@@ -23,11 +22,11 @@ def recurse(subreddit, hot_list=[], after="t3_174eg6z"):
 
         if new_after is None:
             return hot_list
-        
-        remaining_requests = int(response.headers.get('X-Ratelimit-Remaining', 0))
+
+        remaining_req = int(response.headers.get('X-Ratelimit-Remaining', 0))
         reset_time = int(response.headers.get('X-Ratelimit-Reset', 0))
 
-        if remaining_requests <= 1:
+        if remaining_req <= 1:
             sleep_time = max(0, reset_time - time.time())
             time.sleep(sleep_time)
 
