@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# IDK!!
+
+ps aux | grep gunicorn
