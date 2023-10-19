@@ -3,9 +3,10 @@ Description=systemd for starting serving immediately
 After=network.target
 
 [Service]
-WorkingDirectory=/home/ubuntu/AirBnB_clone_v4
-ExecStart=/home/ubuntu/.local/bin/gunicorn --bind 0.0.0.0:5003 --workers 3 web_dynamic.2-hbnb:app
-Restart=on-failure
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/AirBnB_clone_v4/
+ExecStart=/home/ubuntu/.local/bin/gunicorn --workers 3 --bind 0.0.0.0:5003 web_dynamic.2-hbnb:app
 StandardError=append:/tmp/airbnb-error.log
 StandardOutput=append:/tmp/airbnb-access.log
 
